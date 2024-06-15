@@ -51,17 +51,17 @@
 <p id="splash-text"></p>
 
 <script>
-  const sentences = [
+  const splash = [
     "Made by Diddledid on GitHub!",
     "Check out my friend's link! (crater.cc)",
-    "Is it gae to breathe air? I mean, it has touched men, and you are inhaling it.",
-    "p",
-    "e"
+    "Valve, please fix your damn game.",
+    "Emulators can do what Nintendon't - some guy on youtube",
+    "Check out my steam user! AiryFiber12908"
   ];
 
   function generateRandomText() {
-    const randomIndex = Math.floor(Math.random() * sentences.length);
-    return sentences[randomIndex];
+    const randomIndex = Math.floor(Math.random() * splash.length);
+    return splash[randomIndex];
   }
 
   document.getElementById("splash-text").innerHTML = generateRandomText();
