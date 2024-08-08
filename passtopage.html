@@ -1,9 +1,8 @@
 <label for="password">Password:</label>
 <input type="password" id="password" name="password">
-<h4>
-<br>
-        Email:<input type="email"
-                     id="myemail"><br>
-        Password:<input type="password" id="mypasswd"
-                        value="geeks12">
-</h4>
+<script>
+
+        const inputBox = document.getElementById('password');
+        inputBox.addEventListener('keyup', function (event) {
+    printBox.innerHTML = inputBox.value;
+})
