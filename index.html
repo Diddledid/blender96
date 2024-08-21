@@ -101,7 +101,9 @@ li a:hover:not(.active) {
     var img = '<img src=\"';
     var randomIndex = Math.floor(Math.random() * imageURLs.length);
     img += imageURLs[randomIndex];
-    img += '\" alt=\"Some alt text\"/>';
+    // I don't know how the class will work on JavaScript.
+    img += '\" alt=\"Some alt text"\';
+    img += '\" class=\"main-image"\"/'>;
     return img;
   }
   
